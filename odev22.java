@@ -3,21 +3,16 @@ import java.util.Scanner;
 public class odev22 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int sayi;
 
-        System.out.printf("lutfen bir sayi giriniz : ");
-        sayi= input.nextInt();
+        int n;
+        System.out.println("lutfen n sayisini giriniz : ");
+        n= input.nextInt();
+        double sonuc = 0;
 
-        int temp,toplam=0;
-
-
-        while (sayi>0)
-        {
-            temp=sayi%10;
-            sayi=sayi/10;
-            toplam+=temp;
-
+        for (double i = 1; i <=n ; i++) {
+            sonuc+=(1/i);
         }
-        System.out.println("\n\n\ntoplam = "+toplam);
+        System.out.println(sonuc);
+
     }
 }
